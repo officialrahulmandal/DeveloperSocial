@@ -11,6 +11,8 @@ const bodyParser = require('body-parser')
 
 const gravatar = require('gravatar')
 
+const passport = require('passport')
+
 // Body parser middleware
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -23,6 +25,13 @@ const db = require('./config/keys').mongoURI;
 
 // Connect to MongoDB
 mongoose.connect(db).then(() => console.log("MongoDB Connected")).catch(err => console.log(err));
+
+//passport middleware
+app.use(passport.initialize());
+
+
+//passport config
+require('./config/passport')(passport)
 
 app.get('/', (req, res) => res.send('Hello'));
 
