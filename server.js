@@ -7,6 +7,13 @@ const app = express();
 
 const mongoose = require('mongoose')
 
+const bodyParser = require('body-parser')
+
+const gravatar = require('gravatar')
+
+// Body parser middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 const users = require('./routes/api/users')
 const post = require('./routes/api/post')
 const profile = require('./routes/api/profile')
