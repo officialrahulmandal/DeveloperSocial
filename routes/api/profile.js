@@ -9,6 +9,9 @@ const Profile = require('../../models/Profile');
 //load user model
 const User = require('../../models/User');
 
+
+const validateProfileInput = require('../../validation/profile')
+
 // @route GET api/profile/test
 // @desc Test profile route
 // @access Public
@@ -43,6 +46,15 @@ router.get('/', passport.authenticate('jwt',  { session: false}),
 
 router.post('/', passport.authenticate('jwt',  { session: false}),
     (req, res) => {
+
+    const {errors, isValid } = validateProfileInput(req.body);
+
+    //check validation
+    if(!isValid) {
+        //return any error with 400 status
+        return res.status(400).json(errors)
+    }
+
     // get fields
     const profileFields = {};
     profileFields.user = req.user.id;
@@ -56,6 +68,7 @@ router.post('/', passport.authenticate('jwt',  { session: false}),
 
     //skills split into array
     if(typeof req.body.skills !== 'undefined') {
+        console.log('inside skills',req.body.skills.split(','))
         profileFields.skills = req.body.skills.split(',');
     }
 
