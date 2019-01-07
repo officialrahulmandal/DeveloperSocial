@@ -29,7 +29,7 @@ router.get('/', passport.authenticate('jwt',  { session: false}),
 
     Profile.findOne({
         user: req.user.id
-    }).then(profile => {
+    }).populate('user',['name','avatar']).then(profile => {
         if (!profile)  {
             errors.noprofile = 'There is no profile for this user';
             return res.json(errors)
@@ -38,6 +38,56 @@ router.get('/', passport.authenticate('jwt',  { session: false}),
     }).catch (err => res.json(404).json(err))
     });
 
+
+
+// @route GET api/profile/all
+// @desc get all profiles
+// @access Public
+router.get('/all',(req, res) => {
+    const errors = {};
+    Profile.find().populate('user', ['name', 'avatar']).then(profiles =>  {
+    console.log("in the all profiles",profiles)
+        if(!profiles) {
+            console.log("in the error section of all profiles")
+            errors.noprofile = 'there are no profile for this user';
+            return res.status(404).json(errors);
+}
+console.log(profiles)
+res.json(profiles);
+}).catch(err => res.status(404).json({profile: 'there are no profiles'}));
+
+});
+
+// @route GET api/profile/handle/:handle
+// @desc get profile by handle
+// @access Public
+
+router.get('/handle/:handle', (req, res) => {
+    const errors={};
+    Profile.findOne({ handle: req.params.handle}).populate('user', ['name', 'avatar']).then(profile => {
+        if(!profile) {
+            errors.noprofile = 'There is no profile for this user';
+            res.status(400).json(errors)
+}
+res.json(profile);
+}).catch(err => res.status(404).json(err));
+})
+
+
+// @route GET  api/profile/user/:user_id
+// @desc get profile by user ID
+// @access Public
+
+router.get('/user/:user_id', (req, res) => {
+    const errors = {};
+    Profile.findOne({ user: req.params.user_id}).populate('user', ['name', 'avatar']).then(profile => {
+    if(!profile) {
+    errors.user = 'user not found';
+    res.status(400).json(errors)
+}
+res.json(profile);
+}).catch(err => res.status(404).json({profile: 'there is no profile for this user'}));
+})
 
 
 // @route POST api/profile
