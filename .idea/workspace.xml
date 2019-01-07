@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d116d60-764c-4391-8d91-8a8a14920bdf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Profile.js" afterPath="$PROJECT_DIR$/models/Profile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api/profile.js" afterPath="$PROJECT_DIR$/routes/api/profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/validation/register.js" afterPath="$PROJECT_DIR$/validation/register.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="register.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/validation/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+            <state relative-caret-position="558">
+              <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -66,14 +66,14 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="68" column="32" lean-forward="false" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="50" />
+            <state relative-caret-position="267">
+              <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Profile.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Profile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Profile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="738">
@@ -86,8 +86,8 @@
       <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="215" column="21" lean-forward="false" selection-start-line="215" selection-start-column="21" selection-end-line="215" selection-end-column="21" />
+            <state relative-caret-position="4698">
+              <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,7 +143,6 @@
         <option value="$PROJECT_DIR$/config/keys.js" />
         <option value="$PROJECT_DIR$/config/passport.js" />
         <option value="$PROJECT_DIR$/validation/is-empty.js" />
-        <option value="$PROJECT_DIR$/validation/register.js" />
         <option value="$PROJECT_DIR$/validation/login.js" />
         <option value="$PROJECT_DIR$/routes/api/users.js" />
         <option value="$PROJECT_DIR$/server.js" />
@@ -151,8 +150,9 @@
         <option value="$PROJECT_DIR$/validation/profile.js" />
         <option value="$PROJECT_DIR$/validation/experience.js" />
         <option value="$PROJECT_DIR$/validation/education.js" />
-        <option value="$PROJECT_DIR$/routes/api/profile.js" />
         <option value="$PROJECT_DIR$/models/Profile.js" />
+        <option value="$PROJECT_DIR$/routes/api/profile.js" />
+        <option value="$PROJECT_DIR$/validation/register.js" />
       </list>
     </option>
   </component>
@@ -350,12 +350,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546435631582</updated>
       <workItem from="1546435633633" duration="34467000" />
-      <workItem from="1546778574228" duration="14855000" />
+      <workItem from="1546778574228" duration="19392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49322000" />
+    <option name="totallyTimeSpent" value="53859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -502,14 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/validation/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -517,14 +509,6 @@
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="32" lean-forward="false" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,18 +544,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="215" column="21" lean-forward="false" selection-start-line="215" selection-start-column="21" selection-end-line="215" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="89" column="17" lean-forward="false" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4698">
+          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validation/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding />
         </state>
       </provider>
