@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Navbar from '../src/components/layout/Navbar'
+import Footer from '../src/components/layout/Footer'
+import Landing from '../src/components/layout/Layout'
 class App extends Component {
   render() {
     return (
       <div className="App">
-              <h2>My React App</h2>
+              <Navbar/>
+              <Landing/>
+              <Footer />
       </div>
     );
   }
