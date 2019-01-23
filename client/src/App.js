@@ -12,12 +12,14 @@ import Footer from '../src/components/layout/Footer'
 import Landing from '../src/components/layout/Layout'
 import Login from '../src/components/auth/Login'
 import Dashboard from './components/dashboard/Dashboard'
+import CreateProfile from './components/create-profile/createProfile'
 import Register from '../src/components/auth/Register'
 import  { logoutUser } from './actions/authActions'
 import  { clearCurrentProfile } from './actions/profileActions';
 
 
 import PrivateRoute from './components/common/PrivateRoute';
+
 
 // Check for token
 if(localStorage.jwtToken) {
@@ -55,6 +57,9 @@ class App extends Component {
               <Route exact path="/login" component={Login}/>
               <Switch>
                   <PrivateRoute exact path="/dashboard" component={Dashboard}/>
+              </Switch>
+              <Switch>
+                  <PrivateRoute exact path="/create-profile" component={CreateProfile}/>
               </Switch>
 
 

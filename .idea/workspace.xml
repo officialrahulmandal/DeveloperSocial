@@ -4,7 +4,6 @@
     <list default="true" id="9d116d60-764c-4391-8d91-8a8a14920bdf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/App.js" afterPath="$PROJECT_DIR$/client/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,9 +24,11 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-              <folding />
+            <state relative-caret-position="1098">
+              <caret line="61" column="85" lean-forward="false" selection-start-line="61" selection-start-column="85" selection-end-line="61" selection-end-column="85" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrivateRoute.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PrivateRoute.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/common/PrivateRoute.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -52,6 +53,40 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createProfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/createProfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1062">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextAreaFieldGroup.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextFieldGroup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,18 +125,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profileActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/actions/profileActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="authActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/actions/authActions.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,28 +132,6 @@
               <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="types.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/actions/types.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Navbar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/layout/Navbar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="72" column="73" lean-forward="false" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -200,8 +201,10 @@
         <option value="$PROJECT_DIR$/client/src/components/layout/Navbar.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/Spinner.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" />
-        <option value="$PROJECT_DIR$/client/src/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" />
+        <option value="$PROJECT_DIR$/client/src/App.js" />
+        <option value="$PROJECT_DIR$/client/src/components/create-profile/createProfile.js" />
+        <option value="$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js" />
       </list>
     </option>
   </component>
@@ -487,6 +490,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="create-profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -631,12 +660,12 @@
       <workItem from="1548091352780" duration="5284000" />
       <workItem from="1548101415193" duration="13516000" />
       <workItem from="1548153020205" duration="15592000" />
-      <workItem from="1548235878923" duration="4715000" />
+      <workItem from="1548235878923" duration="8344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135572000" />
+    <option name="totallyTimeSpent" value="139201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -672,20 +701,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/validation/experience.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -909,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/auth/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1062,18 +1070,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/common/PrivateRoute.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="61" column="85" lean-forward="false" selection-start-line="61" selection-start-column="85" selection-end-line="61" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/create-profile/createProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
