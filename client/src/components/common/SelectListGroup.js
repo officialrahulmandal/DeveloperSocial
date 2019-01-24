@@ -3,30 +3,35 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
 
-const TextAreaFieldGroup = ({
+const SelectListGroup = ({
     name,
-    placeholder,
     value,
     error,
     info,
     onChange,
+    options
 }) => {
+    const selectOptions= options.map(option => (
+        <option key={option.label} value={option.value}>
+            {option.label}
+        </option>
+    ))
     return (
         <div className="form-group">
-            <textarea  className={classnames('form-control form-control-lg',{'is-invalid': error})}  placeholder={placeholder}  value={value} onChange={onChange} name={name}  />
+            <select  className={classnames('form-control form-control-lg',{'is-invalid': error})}   value={value} onChange={onChange} name={name}  >{selectOptions}</select>
             {error && (<div className="invalid-feedback">{error}</div>)}</div>
     )
 };
 
-TextAreaFieldGroup.prototype = {
+SelectListGroup.prototype = {
     name: PropTypes.string.isRequired,
-    placeholder: PropTypes.string,
     value: PropTypes.string.isRequired,
     info: PropTypes.string,
     error: PropTypes.string,
     onChange: PropTypes.func.isRequired,
-}
+    options: PropTypes.array.isRequired
+};
 
 
 
-export default TextAreaFieldGroup;
+export default SelectListGroup;
